@@ -11,6 +11,7 @@ h1 {
   font-size:48px;
   padding-right: 5px;
 }
+
 p {
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
@@ -24,6 +25,7 @@ a {
   font-size:14px;
   transition: all 0.4s;
 }
+
 a:hover {
   transform: scale(1.1);
 }
@@ -93,6 +95,11 @@ a:hover {
   gap: 10px;
 }
 
+.contacto img {
+  width: 30px;
+  height: 30px;
+}
+
 .contacto a {
   color: white;
   font-size: 20px;
@@ -112,14 +119,10 @@ a:hover {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
 .contacto a:hover:after { 
   width: 100%; 
   left: 0;
-}
-
-.contacto img {
-  width: 30px;
-  height: 30px;
 }
 
 .parallax > use {
