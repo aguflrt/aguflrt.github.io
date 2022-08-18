@@ -21,7 +21,7 @@ p {
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  background: linear-gradient(60deg, rgb(137, 31, 187) 0%, rgb(155, 2, 78) 100%);
   color:white;
 }
 
@@ -30,6 +30,13 @@ p {
   width:100%;
   margin: 0;
   padding: 0;
+}
+
+.inner-header img {
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
 }
 
 .flex {
@@ -52,12 +59,12 @@ p {
   position:relative;
   height:20vh;
   text-align:center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .proyects a {
     text-decoration: none;
-    color: rgb(20, 38, 202);
+    color: rgb(37, 88, 255);
 }
 
 .parallax > use {
