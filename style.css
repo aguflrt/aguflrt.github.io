@@ -18,6 +18,16 @@ p {
   color: #333333;
 }
 
+a {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  transition: all 0.4s;
+}
+a:hover {
+  transform: scale(1.1);
+}
+
 .header {
   position:relative;
   text-align:center;
@@ -65,6 +75,51 @@ p {
 .proyects a {
     text-decoration: none;
     color: rgb(37, 88, 255);
+    font-size: 16px;
+}
+
+.proyects p {
+  font-size: 16px;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  letter-spacing: 1px;
+  gap: 10px;
+}
+
+.contacto a {
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.contacto a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.contacto a:hover:after { 
+  width: 100%; 
+  left: 0;
+}
+
+.contacto img {
+  width: 30px;
+  height: 30px;
 }
 
 .parallax > use {
