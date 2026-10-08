@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Augusto Florit – Técnico de video en vivo</title>
+<meta name="description" content="Operador y técnico de video en eventos en vivo. Más de 5 años de experiencia y más de 500 eventos.">
+<meta name="theme-color" content="#0E0F13">
+<meta property="og:title" content="Augusto Florit – Técnico de video en vivo">
+<meta property="og:description" content="Operador y técnico de video en eventos en vivo.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎥%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0E0F13;--text:#F1F5F2;--muted:#C3CCC6;--green:#22E06B;--line:#26302B;--card:#121614;--red:#FF3B30}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif}
+.cond{font-family:'Barlow Condensed',sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(20px,5vw,64px) 40px;display:flex;flex-direction:column;gap:88px}
+.top{display:flex;flex-direction:column}
+.wip{margin-top:16px;border:1px dashed var(--green);border-radius:12px;padding:12px 16px;text-align:center;font-size:17px;font-weight:500;line-height:1.4}
+.langs{display:flex;justify-content:flex-end;gap:8px;padding-top:20px}
+.langs button{min-width:52px;min-height:44px;border-radius:999px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;letter-spacing:.08em;cursor:pointer;background:transparent;color:var(--text);border:1px solid var(--line)}
+.langs button.on{background:var(--green);color:var(--bg);border-color:var(--green)}
+.hero{padding-top:clamp(28px,6vw,64px);display:flex;flex-direction:column;gap:24px}
+.badge{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:.14em;text-transform:uppercase}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--red);display:inline-block;animation:pulse 2s ease-in-out infinite}
+h1{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(64px,15vw,168px);line-height:.88;text-transform:uppercase}
+h1 span{color:transparent;-webkit-text-stroke:2px var(--text)}
+.lead{margin:0;font-size:clamp(20px,2.6vw,28px);line-height:1.35;max-width:640px;color:var(--muted)}
+.lead b{font-weight:400;color:var(--text)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.stat{border:1px solid var(--line);border-radius:14px;padding:28px;background-color:#0F1211;background-image:radial-gradient(#1C2420 1.5px,transparent 1.5px);background-size:14px 14px}
+.stat .n{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(84px,12vw,120px);line-height:.9;color:var(--green)}
+.stat .l{margin-top:10px;font-size:20px}
+.take{display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line);padding-top:40px}
+.take .big{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(44px,8vw,88px);line-height:.95;text-transform:uppercase}
+.take .big span{color:var(--green)}
+.take p{margin:0;font-size:20px;line-height:1.5;max-width:560px;color:var(--muted)}
+.types{display:flex;flex-direction:column;gap:28px}
+h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:44px;text-transform:uppercase}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s ease,border-color .3s ease}
+.card:hover{transform:translateY(-4px);border-color:var(--green)}
+.card.wide{grid-column:1/-1}
+.card .body{padding:28px;display:flex;flex-direction:column;gap:10px}
+.card .num{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:20px;letter-spacing:.1em;color:var(--green)}
+.card h3{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:34px;text-transform:uppercase}
+.card p{margin:0;line-height:1.5;color:var(--muted)}
+.gal{display:flex;gap:4px;height:clamp(280px,46vw,460px)}
+.ph{flex:1;min-width:0;background-size:cover;filter:brightness(.42) saturate(.7);transition:flex .7s ease,filter .7s ease;cursor:pointer}
+.ph:hover,.ph:active,.ph:focus{flex:2.6;filter:brightness(1) saturate(1);outline:none}
+.gear{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
+.gear h2{font-size:34px;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{border:1px solid var(--green);border-radius:999px;padding:8px 18px;font-size:18px}
+.chip.soft{border-color:var(--line);color:var(--muted)}
+.cta{background:var(--green);color:var(--bg);border-radius:18px;padding:clamp(28px,5vw,56px);display:flex;flex-direction:column;gap:24px}
+.cta h2{font-size:clamp(44px,8vw,84px);line-height:.95}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{min-height:52px;padding:0 28px;display:inline-flex;align-items:center;border-radius:999px;font-family:inherit;font-size:18px;font-weight:500;text-decoration:none;cursor:pointer;transition:transform .2s ease,opacity .2s ease,background .3s ease,color .3s ease}
+.btn:hover{transform:translateY(-2px);opacity:.88}
+.btn.dark{background:var(--bg);color:var(--text);border:2px solid var(--bg)}
+.btn.line{background:transparent;color:var(--bg);border:2px solid var(--bg)}
+.btn.line.copied{background:var(--bg);color:var(--green);transform:scale(1.05);opacity:1}
+.also{margin:0;font-size:18px;font-weight:500}
+.rise{animation:rise .8s ease-out both}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{50%{opacity:.3}}
+@media (prefers-reduced-motion:reduce){.rise,.dot{animation:none}.card,.btn,.ph{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top">
+<div class="wip rise">🚧 <span data-i18n="wip"></span> 🚧</div>
+<div class="langs">
+<button type="button" data-lang="es" aria-label="Español">ES</button>
+<button type="button" data-lang="en" aria-label="English">EN</button>
+<button type="button" data-lang="de" aria-label="Deutsch">DE</button>
+</div>
+<header class="hero rise">
+<div class="badge"><span class="dot"></span><span data-i18n="badge"></span></div>
+<h1>Augusto<br><span>Florit</span></h1>
+<p class="lead"><span data-i18n="role"></span> <b data-i18n="tag"></b></p>
+</header>
+</div>
+
+<section class="stats">
+<div class="stat rise d1"><div class="n">+5</div><div class="l" data-i18n="years"></div></div>
+<div class="stat rise d2"><div class="n">+500</div><div class="l" data-i18n="events"></div></div>
+</section>
+
+<section class="take">
+<div class="big"><span data-i18n="take1" style="color:inherit"></span> <span data-i18n="take2"></span></div>
+<p data-i18n="takeText"></p>
+</section>
+
+<section class="types">
+<h2 data-i18n="types"></h2>
+<div class="cards">
+
+<article class="card wide">
+<div class="gal">
+<div class="ph" tabindex="0" role="img" aria-label="Control de video" style="background-image:url(img/protocolares-1.jpg);background-position:50% 40%"></div>
+<div class="ph" tabindex="0" role="img" aria-label="Cámara PTZ" style="background-image:url(img/protocolares-2.jpg);background-position:50% 34%"></div>
+<div class="ph" tabindex="0" role="img" aria-label="Transmisión en pantalla" style="background-image:url(img/protocolares-3.jpg);background-position:50% 42%"></div>
+</div>
+<div class="body"><div class="num">01</div><h3 data-i18n="c1"></h3><p data-i18n="c1d"></p></div>
+</article>
+
+<article class="card">
+<div class="body"><div class="num">02</div><h3 data-i18n="c2"></h3><p data-i18n="c2d"></p></div>
+</article>
+
+<article class="card">
+<div class="body"><div class="num">03</div><h3 data-i18n="c3"></h3><p data-i18n="c3d"></p></div>
+</article>
+
+<article class="card wide">
+<div class="gal">
+<div class="ph" tabindex="0" role="img" aria-label="Escenario" style="background-image:url(img/corporativos-1.jpg);background-position:50% 36%"></div>
+<div class="ph" tabindex="0" role="img" aria-label="Resolume" style="background-image:url(img/corporativos-2.jpg);background-position:50% 40%"></div>
+<div class="ph" tabindex="0" role="img" aria-label="Multiview y OBS" style="background-image:url(img/corporativos-3.jpg);background-position:50% 42%"></div>
+</div>
+<div class="body"><div class="num">04</div><h3 data-i18n="c4"></h3><p data-i18n="c4d"></p></div>
+</article>
+
+</div>
+</section>
+
+<section class="gear">
+<div>
+<h2 data-i18n="gear"></h2>
+<div class="chips">
+<span class="chip" data-i18n="led"></span>
+<span class="chip" data-i18n="sw"></span>
+<span class="chip" data-i18n="proc"></span>
+<span class="chip soft" data-i18n="more"></span>
+</div>
+</div>
+<div>
+<h2>Software</h2>
+<div class="chips">
+<span class="chip">Resolume</span>
+<span class="chip">vMix</span>
+<span class="chip">OBS</span>
+<span class="chip" data-i18n="editors"></span>
+<span class="chip soft" data-i18n="more"></span>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<h2><span data-i18n="cta1"></span><br><span data-i18n="cta2"></span></h2>
+<div class="btns">
+<a class="btn dark" href="https://wa.me/5493426147601" target="_blank" rel="noopener">WhatsApp</a>
+<button class="btn line" id="mailBtn" type="button"></button>
+</div>
+<p class="also"><span data-i18n="also"></span> <span id="mailText">augustoflorit@gmail.com</span></p>
+</section>
+
+</div>
+
+<script>
+var MAIL = "augustoflorit@gmail.com";
+var T = {
+es: {
+badge: "En vivo · Freelance", wip: "Portfolio web en progreso",
+role: "Operador y técnico de video en eventos en vivo.", tag: "Que se vea bien, y que nada falle.",
+years: "años de experiencia", events: "eventos realizados",
+take1: "No hay", take2: "segunda toma.",
+takeText: "Todo pasa en vivo, así que todo tiene que salir bien a la primera. Ese es el trabajo.",
+types: "Tipos de eventos",
+c1: "Protocolares", c1d: "Actos oficiales, ceremonias y galas donde todo tiene que salir impecable.",
+c2: "Sociales", c2d: "Casamientos, cumpleaños y celebraciones con pantallas y video a medida.",
+c3: "Festivales", c3d: "Escenarios grandes, pantallas LED y visuales en vivo para mucho público.",
+c4: "Corporativos", c4d: "Congresos, lanzamientos y convenciones con presentaciones y transmisión.",
+gear: "Equipos", led: "Pantallas LED", sw: "Switchers", proc: "Procesadores de video",
+more: "y más", editors: "Editores de video",
+cta1: "¿Tenés un evento?", cta2: "Hablemos.",
+mail: "Enviar un mail", copied: "¡Mail copiado!", failed: "Copialo de abajo",
+also: "También podés escribirme a"
+},
+en: {
+badge: "Live · Freelance", wip: "Portfolio website in progress",
+role: "Video operator and technician for live events.", tag: "Make it look great, and make sure nothing fails.",
+years: "years of experience", events: "events completed",
+take1: "No", take2: "second takes.",
+takeText: "Everything happens live, so everything has to work the first time. That is the job.",
+types: "Event types",
+c1: "Formal", c1d: "Official ceremonies, state events and galas where everything has to be flawless.",
+c2: "Social", c2d: "Weddings, birthdays and celebrations with tailored screens and video.",
+c3: "Festivals", c3d: "Big stages, LED screens and live visuals for large crowds.",
+c4: "Corporate", c4d: "Conferences, launches and conventions with presentations and streaming.",
+gear: "Equipment", led: "LED screens", sw: "Switchers", proc: "Video processors",
+more: "and more", editors: "Video editors",
+cta1: "Got an event?", cta2: "Let's talk.",
+mail: "Send an email", copied: "Email copied!", failed: "Copy it from below",
+also: "You can also write to me at"
+},
+de: {
+badge: "Live · Freiberuflich", wip: "Portfolio-Website im Aufbau",
+role: "Video-Operator und Videotechniker für Live-Events.", tag: "Es soll gut aussehen, und nichts darf schiefgehen.",
+years: "Jahre Erfahrung", events: "durchgeführte Events",
+take1: "Kein", take2: "zweiter Take.",
+takeText: "Alles passiert live, also muss alles beim ersten Mal klappen. Das ist die Arbeit.",
+types: "Eventarten",
+c1: "Protokollarisch", c1d: "Offizielle Veranstaltungen, Zeremonien und Galas, bei denen alles makellos sein muss.",
+c2: "Privat", c2d: "Hochzeiten, Geburtstage und Feiern mit maßgeschneiderten Bildschirmen und Video.",
+c3: "Festivals", c3d: "Große Bühnen, LED-Wände und Live-Visuals für viel Publikum.",
+c4: "Firmenevents", c4d: "Kongresse, Produktlaunches und Tagungen mit Präsentationen und Übertragung.",
+gear: "Ausrüstung", led: "LED-Wände", sw: "Switcher", proc: "Videoprozessoren",
+more: "und mehr", editors: "Videoschnitt",
+cta1: "Du hast ein Event?", cta2: "Lass uns reden.",
+mail: "E-Mail senden", copied: "E-Mail kopiert!", failed: "Unten kopieren",
+also: "Du kannst mir auch schreiben:"
+}
+};
+var lang = "es";
+var mailBtn = document.getElementById("mailBtn");
+function apply() {
+  var t = T[lang];
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(function (el) { el.textContent = t[el.getAttribute("data-i18n")]; });
+  document.querySelectorAll(".langs button").forEach(function (b) { b.classList.toggle("on", b.getAttribute("data-lang") === lang); });
+  if (!mailBtn.classList.contains("copied")) mailBtn.textContent = t.mail;
+}
+document.querySelectorAll(".langs button").forEach(function (b) {
+  b.addEventListener("click", function () { lang = b.getAttribute("data-lang"); apply(); });
+});
+function flash(ok) {
+  var t = T[lang];
+  mailBtn.classList.toggle("copied", ok);
+  mailBtn.textContent = ok ? t.copied : t.failed;
+  setTimeout(function () { mailBtn.classList.remove("copied"); mailBtn.textContent = T[lang].mail; }, 2600);
+}
+function fallbackCopy() {
+  try {
+    var ta = document.createElement("textarea");
+    ta.value = MAIL; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    var ok = document.execCommand("copy");
+    document.body.removeChild(ta);
+    flash(ok);
+  } catch (e) { flash(false); }
+}
+mailBtn.addEventListener("click", function () {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(MAIL).then(function () { flash(true); }, fallbackCopy);
+  } else { fallbackCopy(); }
+});
+apply();
+</script>
+</body>
+</html>
