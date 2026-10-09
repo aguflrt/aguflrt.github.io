@@ -3,16 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Augusto Florit – Técnico de video en vivo</title>
-<meta name="description" content="Operador y técnico de video en eventos en vivo. Más de 5 años de experiencia y más de 500 eventos.">
+<title>Augusto Florit – Técnico de vídeo en directo</title>
+<meta name="description" content="Operador y técnico de vídeo en eventos en directo. Más de 5 años de experiencia y más de 500 eventos.">
 <meta name="theme-color" content="#0E0F13">
-<meta property="og:title" content="Augusto Florit – Técnico de video en vivo">
-<meta property="og:description" content="Operador y técnico de video en eventos en vivo.">
+<meta property="og:title" content="Augusto Florit – Técnico de vídeo en directo">
+<meta property="og:description" content="Operador y técnico de vídeo en eventos en directo.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎥%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:'Barlow';font-weight:400;font-style:normal;font-display:swap;src:url(fonts/barlow-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow';font-weight:500;font-style:normal;font-display:swap;src:url(fonts/barlow-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-weight:600;font-style:normal;font-display:swap;src:url(fonts/barlow-condensed-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-weight:700;font-style:normal;font-display:swap;src:url(fonts/barlow-condensed-latin-700-normal.woff2) format('woff2')}
 :root{--bg:#0E0F13;--text:#F1F5F2;--muted:#C3CCC6;--green:#22E06B;--line:#26302B;--card:#121614;--red:#FF3B30}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -105,7 +107,7 @@ h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 
 <article class="card wide">
 <div class="gal">
-<div class="ph" tabindex="0" role="img" aria-label="Control de video" style="background-image:url(img/protocolares-1.jpg);background-position:50% 40%"></div>
+<div class="ph" tabindex="0" role="img" aria-label="Control de vídeo" style="background-image:url(img/protocolares-1.jpg);background-position:50% 40%"></div>
 <div class="ph" tabindex="0" role="img" aria-label="Cámara PTZ" style="background-image:url(img/protocolares-2.jpg);background-position:50% 34%"></div>
 <div class="ph" tabindex="0" role="img" aria-label="Transmisión en pantalla" style="background-image:url(img/protocolares-3.jpg);background-position:50% 42%"></div>
 </div>
@@ -168,21 +170,21 @@ h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 <script>
 var T = {
 es: {
-badge: "En vivo · Freelance", wip: "Portfolio web en progreso",
-role: "Operador y técnico de video en eventos en vivo.", tag: "Que se vea bien, y que nada falle.",
+badge: "En directo · Freelance", wip: "Portfolio web en progreso",
+role: "Operador y técnico de vídeo en eventos en directo.", tag: "Que se vea bien, y que nada falle.",
 years: "años de experiencia", events: "eventos realizados",
 take1: "No hay", take2: "segunda toma.",
-takeText: "Todo pasa en vivo, así que todo tiene que salir bien a la primera. Ese es el trabajo.",
+takeText: "Todo ocurre en directo, así que todo tiene que salir bien a la primera. Ese es el trabajo.",
 types: "Tipos de eventos",
-c1: "Protocolares", c1d: "Actos oficiales, ceremonias y galas donde todo tiene que salir impecable.",
-c2: "Sociales", c2d: "Casamientos, cumpleaños y celebraciones con pantallas y video a medida.",
-c3: "Festivales", c3d: "Escenarios grandes, pantallas LED y visuales en vivo para mucho público.",
-c4: "Corporativos", c4d: "Congresos, lanzamientos y convenciones con presentaciones y transmisión.",
-gear: "Equipos", led: "Pantallas LED", sw: "Switchers", proc: "Procesadores de video",
-more: "y más", editors: "Editores de video",
-cta1: "¿Tenés un evento?", cta2: "Hablemos.",
-linkedin: "Escribime por LinkedIn",
-also: "También podés escribirme a"
+c1: "Protocolarios", c1d: "Actos oficiales, ceremonias y galas donde todo tiene que salir impecable.",
+c2: "Sociales", c2d: "Bodas, cumpleaños y celebraciones con pantallas y vídeo a medida.",
+c3: "Festivales", c3d: "Grandes escenarios, pantallas LED y visuales en directo para mucho público.",
+c4: "Corporativos", c4d: "Congresos, lanzamientos y convenciones con presentaciones y retransmisión.",
+gear: "Equipos", led: "Pantallas LED", sw: "Switchers", proc: "Procesadores de vídeo",
+more: "y más", editors: "Editores de vídeo",
+cta1: "¿Tienes un evento?", cta2: "Hablemos.",
+linkedin: "Escríbeme por LinkedIn",
+also: "También puedes escribirme a"
 },
 en: {
 badge: "Live · Freelance", wip: "Portfolio website in progress",
@@ -214,12 +216,19 @@ c3: "Festivals", c3d: "Große Bühnen, LED-Wände und Live-Visuals für viel Pub
 c4: "Firmenevents", c4d: "Kongresse, Produktlaunches und Tagungen mit Präsentationen und Übertragung.",
 gear: "Ausrüstung", led: "LED-Wände", sw: "Switcher", proc: "Videoprozessoren",
 more: "und mehr", editors: "Videoschnitt",
-cta1: "Du hast ein Event?", cta2: "Lass uns reden.",
-linkedin: "Schreib mir auf LinkedIn",
-also: "Du kannst mir auch schreiben:"
+cta1: "Haben Sie ein Event?", cta2: "Sprechen wir darüber.",
+linkedin: "Schreiben Sie mir auf LinkedIn",
+also: "Sie können mir auch schreiben:"
 }
 };
-var lang = "es";
+var lang = "en";
+(function () {
+  var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+  for (var i = 0; i < prefs.length; i++) {
+    var l = String(prefs[i]).toLowerCase().slice(0, 2);
+    if (l === "de" || l === "es" || l === "en") { lang = l; break; }
+  }
+})();
 function apply() {
   var t = T[lang];
   document.documentElement.lang = lang;
