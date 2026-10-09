@@ -64,7 +64,6 @@ h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 .btn:hover{transform:translateY(-2px);opacity:.88}
 .btn.dark{background:var(--bg);color:var(--text);border:2px solid var(--bg)}
 .btn.line{background:transparent;color:var(--bg);border:2px solid var(--bg)}
-.btn.line.copied{background:var(--bg);color:var(--green);transform:scale(1.05);opacity:1}
 .also{margin:0;font-size:18px;font-weight:500}
 .rise{animation:rise .8s ease-out both}
 .d1{animation-delay:.1s}.d2{animation-delay:.25s}
@@ -159,7 +158,7 @@ h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 <h2><span data-i18n="cta1"></span><br><span data-i18n="cta2"></span></h2>
 <div class="btns">
 <a class="btn dark" href="https://wa.me/5493426147601" target="_blank" rel="noopener">WhatsApp</a>
-<button class="btn line" id="mailBtn" type="button"></button>
+<a class="btn line" href="https://www.linkedin.com/in/augustoflorit/" target="_blank" rel="noopener" data-i18n="linkedin"></a>
 </div>
 <p class="also"><span data-i18n="also"></span> <span id="mailText">augustoflorit@gmail.com</span></p>
 </section>
@@ -167,7 +166,6 @@ h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 </div>
 
 <script>
-var MAIL = "augustoflorit@gmail.com";
 var T = {
 es: {
 badge: "En vivo · Freelance", wip: "Portfolio web en progreso",
@@ -183,7 +181,7 @@ c4: "Corporativos", c4d: "Congresos, lanzamientos y convenciones con presentacio
 gear: "Equipos", led: "Pantallas LED", sw: "Switchers", proc: "Procesadores de video",
 more: "y más", editors: "Editores de video",
 cta1: "¿Tenés un evento?", cta2: "Hablemos.",
-mail: "Enviar un mail", copied: "¡Mail copiado!", failed: "Copialo de abajo",
+linkedin: "Escribime por LinkedIn",
 also: "También podés escribirme a"
 },
 en: {
@@ -200,7 +198,7 @@ c4: "Corporate", c4d: "Conferences, launches and conventions with presentations 
 gear: "Equipment", led: "LED screens", sw: "Switchers", proc: "Video processors",
 more: "and more", editors: "Video editors",
 cta1: "Got an event?", cta2: "Let's talk.",
-mail: "Send an email", copied: "Email copied!", failed: "Copy it from below",
+linkedin: "Message me on LinkedIn",
 also: "You can also write to me at"
 },
 de: {
@@ -217,44 +215,22 @@ c4: "Firmenevents", c4d: "Kongresse, Produktlaunches und Tagungen mit Präsentat
 gear: "Ausrüstung", led: "LED-Wände", sw: "Switcher", proc: "Videoprozessoren",
 more: "und mehr", editors: "Videoschnitt",
 cta1: "Du hast ein Event?", cta2: "Lass uns reden.",
-mail: "E-Mail senden", copied: "E-Mail kopiert!", failed: "Unten kopieren",
+linkedin: "Schreib mir auf LinkedIn",
 also: "Du kannst mir auch schreiben:"
 }
 };
 var lang = "es";
-var mailBtn = document.getElementById("mailBtn");
 function apply() {
   var t = T[lang];
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach(function (el) { el.textContent = t[el.getAttribute("data-i18n")]; });
   document.querySelectorAll(".langs button").forEach(function (b) { b.classList.toggle("on", b.getAttribute("data-lang") === lang); });
-  if (!mailBtn.classList.contains("copied")) mailBtn.textContent = t.mail;
 }
 document.querySelectorAll(".langs button").forEach(function (b) {
   b.addEventListener("click", function () { lang = b.getAttribute("data-lang"); apply(); });
-});
-function flash(ok) {
-  var t = T[lang];
-  mailBtn.classList.toggle("copied", ok);
-  mailBtn.textContent = ok ? t.copied : t.failed;
-  setTimeout(function () { mailBtn.classList.remove("copied"); mailBtn.textContent = T[lang].mail; }, 2600);
-}
-function fallbackCopy() {
-  try {
-    var ta = document.createElement("textarea");
-    ta.value = MAIL; ta.style.position = "fixed"; ta.style.opacity = "0";
-    document.body.appendChild(ta); ta.select();
-    var ok = document.execCommand("copy");
-    document.body.removeChild(ta);
-    flash(ok);
-  } catch (e) { flash(false); }
-}
-mailBtn.addEventListener("click", function () {
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(MAIL).then(function () { flash(true); }, fallbackCopy);
-  } else { fallbackCopy(); }
 });
 apply();
 </script>
 </body>
 </html>
+
