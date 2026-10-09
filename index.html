@@ -33,6 +33,7 @@ h1{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 h1 span{color:transparent;-webkit-text-stroke:2px var(--text)}
 .lead{margin:0;font-size:clamp(20px,2.6vw,28px);line-height:1.35;max-width:640px;color:var(--muted)}
 .lead b{font-weight:400;color:var(--text)}
+.where{align-self:flex-start;font-size:18px;line-height:1.4;color:var(--muted);border-left:3px solid var(--green);padding-left:14px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 .stat{border:1px solid var(--line);border-radius:14px;padding:28px;background-color:#0F1211;background-image:radial-gradient(#1C2420 1.5px,transparent 1.5px);background-size:14px 14px}
 .stat .n{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(84px,12vw,120px);line-height:.9;color:var(--green)}
@@ -88,6 +89,7 @@ h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 <div class="badge"><span class="dot"></span><span data-i18n="badge"></span></div>
 <h1>Augusto<br><span>Florit</span></h1>
 <p class="lead"><span data-i18n="role"></span> <b data-i18n="tag"></b></p>
+<div class="where" data-i18n="where"></div>
 </header>
 </div>
 
@@ -170,7 +172,7 @@ h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 <script>
 var T = {
 es: {
-badge: "En directo · Freelance", wip: "Portfolio web en progreso",
+badge: "En directo · Freelance", where: "Con base en Santa Fe, Argentina · Disponible para viajar a cualquier país", wip: "Portfolio web en progreso",
 role: "Operador y técnico de vídeo en eventos en directo.", tag: "Que se vea bien, y que nada falle.",
 years: "años de experiencia", events: "eventos realizados",
 take1: "No hay", take2: "segunda toma.",
@@ -187,7 +189,7 @@ linkedin: "Escríbeme por LinkedIn",
 also: "También puedes escribirme a"
 },
 en: {
-badge: "Live · Freelance", wip: "Portfolio website in progress",
+badge: "Live · Freelance", where: "Based in Santa Fe, Argentina · Available to travel worldwide", wip: "Portfolio website in progress",
 role: "Video operator and technician for live events.", tag: "Make it look great, and make sure nothing fails.",
 years: "years of experience", events: "events completed",
 take1: "No", take2: "second takes.",
@@ -204,7 +206,7 @@ linkedin: "Message me on LinkedIn",
 also: "You can also write to me at"
 },
 de: {
-badge: "Live · Freiberuflich", wip: "Portfolio-Website im Aufbau",
+badge: "Live · Freiberuflich", where: "Sitz in Santa Fe, Argentinien · Weltweit reisebereit", wip: "Portfolio-Website im Aufbau",
 role: "Video-Operator und Videotechniker für Live-Events.", tag: "Es soll gut aussehen, und nichts darf schiefgehen.",
 years: "Jahre Erfahrung", events: "durchgeführte Events",
 take1: "Kein", take2: "zweiter Take.",
@@ -242,4 +244,3 @@ apply();
 </script>
 </body>
 </html>
-
