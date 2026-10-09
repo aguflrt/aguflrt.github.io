@@ -22,7 +22,6 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:'Barlow',sans-s
 .cond{font-family:'Barlow Condensed',sans-serif}
 .wrap{max-width:1040px;margin:0 auto;padding:0 clamp(20px,5vw,64px) 40px;display:flex;flex-direction:column;gap:88px}
 .top{display:flex;flex-direction:column}
-.wip{margin-top:16px;border:1px dashed var(--green);border-radius:12px;padding:12px 16px;text-align:center;font-size:17px;font-weight:500;line-height:1.4}
 .langs{display:flex;justify-content:flex-end;gap:8px;padding-top:20px}
 .langs button{min-width:52px;min-height:44px;border-radius:999px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;letter-spacing:.08em;cursor:pointer;background:transparent;color:var(--text);border:1px solid var(--line)}
 .langs button.on{background:var(--green);color:var(--bg);border-color:var(--green)}
@@ -79,7 +78,6 @@ h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 <div class="wrap">
 
 <div class="top">
-<div class="wip rise">🚧 <span data-i18n="wip"></span> 🚧</div>
 <div class="langs">
 <button type="button" data-lang="es" aria-label="Español">ES</button>
 <button type="button" data-lang="en" aria-label="English">EN</button>
@@ -125,7 +123,12 @@ h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 <div class="body"><div class="num">02</div><h3 data-i18n="c2"></h3><p data-i18n="c2d"></p></div>
 </article>
 
-<article class="card">
+<article class="card wide">
+<div class="gal">
+<div class="ph" tabindex="0" role="img" aria-label="Escenario al aire libre" style="background-image:url(img/festivales-1.jpg);background-position:50% 38%"></div>
+<div class="ph" tabindex="0" role="img" aria-label="Concierto" style="background-image:url(img/festivales-2.jpg);background-position:50% 30%"></div>
+<div class="ph" tabindex="0" role="img" aria-label="Control de vídeo" style="background-image:url(img/festivales-3.jpg);background-position:50% 48%"></div>
+</div>
 <div class="body"><div class="num">03</div><h3 data-i18n="c3"></h3><p data-i18n="c3d"></p></div>
 </article>
 
@@ -177,7 +180,7 @@ h2{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:
 <script>
 var T = {
 es: {
-badge: "En directo · Freelance", where: "Con base en Santa Fe, Argentina · Disponible para viajar a cualquier país", wip: "Portfolio web en progreso",
+badge: "En directo · Freelance", where: "Con base en Santa Fe, Argentina · Disponible para viajar a cualquier país",
 role: "Operador y técnico de vídeo en eventos en directo.", tag: "Que se vea bien, y que nada falle.",
 years: "años de experiencia", events: "eventos realizados",
 take1: "No hay", take2: "segunda toma.",
@@ -194,7 +197,7 @@ linkedin: "Escríbeme por LinkedIn",
 also: "También puedes escribirme a"
 },
 en: {
-badge: "Live · Freelance", where: "Based in Santa Fe, Argentina · Available to travel worldwide", wip: "Portfolio website in progress",
+badge: "Live · Freelance", where: "Based in Santa Fe, Argentina · Available to travel worldwide",
 role: "Video operator and technician for live events.", tag: "Make it look great, and make sure nothing fails.",
 years: "years of experience", events: "events completed",
 take1: "No", take2: "second takes.",
@@ -211,7 +214,7 @@ linkedin: "Message me on LinkedIn",
 also: "You can also write to me at"
 },
 de: {
-badge: "Live · Freiberuflich", where: "Sitz in Santa Fe, Argentinien · Weltweit reisebereit", wip: "Portfolio-Website im Aufbau",
+badge: "Live · Freiberuflich", where: "Sitz in Santa Fe, Argentinien · Weltweit reisebereit",
 role: "Video-Operator und Videotechniker für Live-Events.", tag: "Es soll gut aussehen, und nichts darf schiefgehen.",
 years: "Jahre Erfahrung", events: "durchgeführte Events",
 take1: "Kein", take2: "zweiter Take.",
